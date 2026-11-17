@@ -1,27 +1,13 @@
 import sqlite3
 import tkinter as tk
 from tkinter import messagebox, ttk
-from database import (
-    setup_db
-)
-from base import (
-    COLOR_BG,
-    COLOR_CARD,
-    COLOR_DANGER,
-    COLOR_HEADER,
-    COLOR_NEUTRAL,
-    COLOR_PRIMARY,
-    COLOR_SUCCESS,
-    COLOR_TEXT,
-    COLOR_WARNING,
-)
 
-
-
-# --- 1. SETUP DATABASE ---
-
+window = tk.Tk()
+from colors import *
+from database import *
 
 # --- 2. FUNGSI PINDAH HALAMAN ---
+
 def buka_halaman(halaman):
     halaman_menu.pack_forget()
     halaman_daftar_buku.pack_forget()
